@@ -54,8 +54,13 @@
     </header>
 
     <main id="main" tabindex="-1">
-      <section class="hero">
-        <div class="shell hero-grid">
+      <section
+        class="hero hero--fountain"
+        aria-label="Welcome"
+        style="--hero-bg: url('assets/photos/hialeah-fountain.jpg')"
+      >
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="shell hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">Established local operators</p>
             <h1>Connect across Hialeah and the airwaves.</h1>
@@ -69,21 +74,12 @@
               <a class="btn btn-ghost" href="#contact">Get in touch</a>
             </div>
           </div>
-          <figure class="hero-shot">
-            <img
-              src="assets/photos/hero-clubhouse.jpeg"
-              width="920"
-              height="640"
-              alt="Club members at a radio event"
-              class="photo"
-            />
-          </figure>
         </div>
       </section>
 
       <section class="section" id="about">
-        <div class="shell split">
-          <div>
+        <div class="shell about-layout">
+          <div class="about-copy">
             <h2>A civic-minded radio club.</h2>
             <p class="prose">
               Ham radio connects neighbors during calm days and emergencies
@@ -91,21 +87,130 @@
               on-air etiquette — then put them to work through public service,
               mentorship, and friendly conversation on the bands.
             </p>
+            <dl class="facts">
+              <div>
+                <dt>Licensed members</dt>
+                <dd>Technician through Extra — all bands, all modes.</dd>
+              </div>
+              <div>
+                <dt>Newcomers</dt>
+                <dd>Study groups, VE sessions, Elmer help upon request.</dd>
+              </div>
+              <div>
+                <dt>Local focus</dt>
+                <dd>Hialeah and greater Miami‑Dade area collaboration.</dd>
+              </div>
+            </dl>
           </div>
-          <dl class="facts">
-            <div>
-              <dt>Licensed members</dt>
-              <dd>Technician through Extra — all bands, all modes.</dd>
+          <div class="about-media">
+            <div
+              class="carousel"
+              data-carousel
+              aria-roledescription="carousel"
+              aria-label="Club photos"
+            >
+              <div class="carousel-viewport">
+                <div class="carousel-track" data-carousel-track>
+                  <figure class="carousel-slide is-active" data-carousel-slide>
+                    <img
+                      src="assets/photos/hero-clubhouse.jpeg"
+                      width="720"
+                      height="540"
+                      alt="Hialeah Radio Club members"
+                      class="photo"
+                      loading="eager"
+                    />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-1.jpg" width="720" height="540" alt="Club photo 1" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-2.jpg" width="720" height="540" alt="Club photo 2" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-3.jpg" width="720" height="540" alt="Club photo 3" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-4.jpg" width="720" height="540" alt="Club photo 4" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-5.jpg" width="720" height="540" alt="Club photo 5" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-6.jpg" width="720" height="540" alt="Club photo 6" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-7.jpeg" width="720" height="540" alt="Club photo 7" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-8.jpeg" width="720" height="540" alt="Club photo 8" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-9.jpeg" width="720" height="540" alt="Club photo 9" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-10.jpeg" width="720" height="540" alt="Club photo 10" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-11.jpeg" width="720" height="540" alt="Club photo 11" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-12.jpeg" width="720" height="540" alt="Club photo 12" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-13.jpeg" width="720" height="540" alt="Club photo 13" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-14.jpeg" width="720" height="540" alt="Club photo 14" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-15.jpeg" width="720" height="540" alt="Club photo 15" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-16.jpeg" width="720" height="540" alt="Club photo 16" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-17.jpeg" width="720" height="540" alt="Club photo 17" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-18.jpeg" width="720" height="540" alt="Club photo 18" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-19.jpeg" width="720" height="540" alt="Club photo 19" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-20.jpeg" width="720" height="540" alt="Club photo 20" class="photo" loading="lazy" />
+                  </figure>
+                  <figure class="carousel-slide" data-carousel-slide aria-hidden="true">
+                    <img src="assets/photos/Slides-21.jpeg" width="720" height="540" alt="Club photo 21" class="photo" loading="lazy" />
+                  </figure>
+                </div>
+              </div>
+              <div class="carousel-controls">
+                <button
+                  type="button"
+                  class="carousel-btn"
+                  data-carousel-prev
+                  aria-label="Previous photo"
+                >
+                  ‹
+                </button>
+                <span
+                  class="carousel-counter"
+                  data-carousel-counter
+                  aria-live="polite"
+                >1 / 22</span>
+                <button
+                  type="button"
+                  class="carousel-btn"
+                  data-carousel-next
+                  aria-label="Next photo"
+                >
+                  ›
+                </button>
+              </div>
             </div>
-            <div>
-              <dt>Newcomers</dt>
-              <dd>Study groups, VE sessions, Elmer help upon request.</dd>
-            </div>
-            <div>
-              <dt>Local focus</dt>
-              <dd>Hialeah and greater Miami‑Dade area collaboration.</dd>
-            </div>
-          </dl>
+          </div>
         </div>
       </section>
 
@@ -313,6 +418,106 @@
           closeMenu();
         });
       });
+
+      (function initCarousel() {
+        var root = document.querySelector("[data-carousel]");
+        if (!root) return;
+
+        var SLIDE_MS = 3000;
+        var allSlides = Array.prototype.slice.call(
+          root.querySelectorAll("[data-carousel-slide]")
+        );
+        var prevBtn = root.querySelector("[data-carousel-prev]");
+        var nextBtn = root.querySelector("[data-carousel-next]");
+        var counter = root.querySelector("[data-carousel-counter]");
+        var controls = root.querySelector(".carousel-controls");
+        var index = 0;
+        var timer = null;
+        var slides = [];
+        var reducedMotion = window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+        function removeSlide(slide) {
+          slide.parentNode.removeChild(slide);
+        }
+
+        function checkImage(img) {
+          return new Promise(function (resolve) {
+            if (img.complete) {
+              resolve(img.naturalWidth > 0);
+              return;
+            }
+            img.addEventListener("load", function () {
+              resolve(true);
+            });
+            img.addEventListener("error", function () {
+              resolve(false);
+            });
+          });
+        }
+
+        Promise.all(
+          allSlides.map(function (slide) {
+            var img = slide.querySelector("img");
+            if (!img) {
+              removeSlide(slide);
+              return Promise.resolve(false);
+            }
+            return checkImage(img).then(function (ok) {
+              if (!ok) {
+                removeSlide(slide);
+              }
+              return ok;
+            });
+          })
+        ).then(function () {
+          slides = Array.prototype.slice.call(
+            root.querySelectorAll("[data-carousel-slide]")
+          );
+          if (!slides.length) return;
+
+          function updateCounter() {
+            if (counter) {
+              counter.textContent = index + 1 + " / " + slides.length;
+            }
+          }
+
+          function show(i) {
+            index = (i + slides.length) % slides.length;
+            slides.forEach(function (slide, n) {
+              var active = n === index;
+              slide.classList.toggle("is-active", active);
+              slide.setAttribute("aria-hidden", active ? "false" : "true");
+            });
+            updateCounter();
+          }
+
+          function restartAutoplay() {
+            if (timer) clearInterval(timer);
+            if (reducedMotion || slides.length < 2) return;
+            timer = setInterval(function () {
+              show(index + 1);
+            }, SLIDE_MS);
+          }
+
+          if (slides.length < 2 && controls) {
+            controls.hidden = true;
+          }
+
+          prevBtn.addEventListener("click", function () {
+            show(index - 1);
+            restartAutoplay();
+          });
+          nextBtn.addEventListener("click", function () {
+            show(index + 1);
+            restartAutoplay();
+          });
+
+          show(0);
+          restartAutoplay();
+        });
+      })();
     </script>
   </body>
 </html>

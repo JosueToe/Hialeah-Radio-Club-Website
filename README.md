@@ -10,7 +10,9 @@ Simple, static landing page: one HTML file, one stylesheet, lightweight assets.
 
    | File | Suggested subject |
    |------|-------------------|
-   | `hero-clubhouse.jpeg` (or `.jpg`) | Wide hero image: group shot, shack, Field Day tent, meeting room |
+   | `hialeah-fountain.jpg` | Full-width hero background — Hialeah fountain / city landmark |
+   | `hero-clubhouse.jpeg` (or `.jpg`) | First slide in the about-section carousel |
+   | `Slides-1.jpg` … `Slides-6.jpg`, `Slides-7.jpeg` … `Slides-21.jpeg` | Carousel slides after `hero-clubhouse` (22 photos total) |
    | `activity-01.jpg` | Nets, meetings, on-air gatherings |
    | `activity-02.jpeg` (or `.jpg`) | Builds, soldering, antennas, test gear |
    | `activity-03.jpg` | Public outreach, fairs, demos, emcomm drills |
